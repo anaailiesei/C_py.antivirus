@@ -1,4 +1,4 @@
-# malicious
+# Antivirus
 Checks for malicious internet traffic and urls
 
 Algoritmul e acelasi si pentru rezolvarea din C si pentru rezolvarea din Python
