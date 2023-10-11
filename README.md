@@ -31,7 +31,7 @@ Pentru fiecare url din fisierul "urls.in" se verifica daca vreuna dintre functii
 "url_euristic_2", "url_euristic_3", "url_euristic_4" returneaza 1 (adica url-ul e malitios). Daca
 da, in fisierul "urls-predictions.out" se printeaza 1, daca nu se printeaza 0.
 
-#Trafic malitios
+# Trafic malitios
 
 Am realizat urmatoarele functii ajutatoare:
 
