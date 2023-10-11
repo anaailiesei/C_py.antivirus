@@ -4,7 +4,7 @@
 #define max1 1000
 #define max2 300
 
-// ***************Functii pentru task-ul 1*******************
+// ***************Functii pentru detectarea url-urilor malitioase *******************
 int url_euristic_1(char *url, FILE *domains_in)
 {
 	char *domain = (char *)calloc(max1, sizeof(char));
@@ -63,7 +63,7 @@ int url_euristic_4(char *url)
 	return 0;
 }
 
-// ***************Functii pentru task-ul 2*******************
+// ***************Functii pentru detectarea traficului suspect *******************
 
 int get_index_of_parameter(char *parametru, char *antet)
 {
@@ -134,7 +134,7 @@ int traffic_euristic_2(char *traffic, char *antet)
 
 int main(void)
 {
-	// ***************Task-ul 1*******************
+	// ***************Url malitios*******************
 	char *file_urls = "./data/urls/urls.in";
 	char *file_domains = "./data/urls/domains_database";
 
@@ -161,7 +161,7 @@ int main(void)
 	fclose(url_in); fclose(url_out); fclose(domains_in);
 	free(url);
 
-	// ***************Task-ul 2*******************
+	// ***************Trafic malitios*******************
 	char *file_traffics = "./data/traffic/traffic.in";
 
 	FILE *traffic_in = fopen(file_traffics, "r");
