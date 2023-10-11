@@ -4,6 +4,7 @@ Checks for malicious internet traffic and urls
 Algoritmul e acelasi si pentru rezolvarea din C si pentru rezolvarea din Python
 Am realizat urmatoarele functii ajutatoare:
 
+# Url malitios
 "url_euristic_1" - Primeste ca parametrii un url si un fisier cu domenii malitioase
 Functia verifica daca vreunul din domeniile din lista de domenii se regaseste in url. 
 Daca da, functia returneaza 1, daca nu, functia returneaza 0
@@ -30,7 +31,7 @@ Pentru fiecare url din fisierul "urls.in" se verifica daca vreuna dintre functii
 "url_euristic_2", "url_euristic_3", "url_euristic_4" returneaza 1 (adica url-ul e malitios). Daca
 da, in fisierul "urls-predictions.out" se printeaza 1, daca nu se printeaza 0.
 
-***********************TASK2***********************
+#Trafic malitios
 
 Am realizat urmatoarele functii ajutatoare:
 
