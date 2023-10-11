@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"""Rezolvare tema bonus"""
 import re
 
 
@@ -54,7 +53,7 @@ def url_euristic_4(url_local):
         check = 0
     return check
 
-# ***************Functii pentru task-ul 2*******************
+# ***************Functii pentru trafic malitios *******************
 
 
 def get_index_of_parameter(parametru, antet_local):
@@ -98,7 +97,7 @@ def traffic_euristic_2(traffic_local, antet_local):
 # ***************Incepe "main-ul"*******************
 
 
-# ***************Task-ul 1*******************
+# ***************Url malitios*******************
 with open('./data/urls/urls.in', 'r', encoding='utf-8') as url_in, \
         open('urls-predictions.out', 'w', encoding='utf-8') as url_out, \
         open('./data/urls/domains_database', 'r', encoding='utf-8') as domains_in:
@@ -114,7 +113,7 @@ with open('./data/urls/urls.in', 'r', encoding='utf-8') as url_in, \
         else:
             url_out.write("0\n")
 
-# ***************Task-ul 2*******************
+# ***************Trafic malitios*******************
 
 with open('./data/traffic/traffic.in', 'r', encoding='utf-8') as traffic_in, \
         open('traffic-predictions.out', 'w', encoding='utf-8') as traffic_out:
